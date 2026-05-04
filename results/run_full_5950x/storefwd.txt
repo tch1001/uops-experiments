@@ -1,0 +1,14 @@
+uops-style store-forwarding + 4K-aliasing probe
+logical_cpu_requested=0 pinned=yes current_cpu=0 ops_per_sample=3200000 (each op = 1 store + 1 load + 1 mask) samples=31
+features: invariant_tsc=yes
+buffer: mmap 16384 bytes at 0x7c776fbbf000
+empty_loop_median: thread_ns=705970 tsc=2398904 est_cycles_per_ns=3.398
+
+id  scenario                       med ns/op   min ns/op   p90 ns/op  med tsc/op  est cyc/op
+----------------------------------------------------------------------------------------
+A   aligned 8B->8B same addr           1.417       1.386       1.556       4.819       4.816
+B   8B@0 -> 8B@4 (partial)             3.965       3.964       3.966      13.482      13.474
+C   4B@0 -> 8B@0 (wider load)          3.967       3.965       3.971      13.487      13.479
+D   8B@0 -> 4B@0 (narrower)            1.407       1.359       1.557       4.785       4.782
+E1  8B@0 -> 8B@4096 (4K alias)        -0.042      -0.043      -0.042      -0.144      -0.144
+E2  8B@0 -> 8B@64 (control)           -0.073      -0.074      -0.073      -0.249      -0.249

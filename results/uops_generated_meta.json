@@ -1,0 +1,3442 @@
+{
+  "VADDPD_XMM_XMM_XMM": {
+    "iform_xed": "VADDPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VADDPD",
+    "iclass": "VADDPD",
+    "extension": "AVX",
+    "string": "VADDPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VADDPD_YMM_YMM_YMM": {
+    "iform_xed": "VADDPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VADDPD",
+    "iclass": "VADDPD",
+    "extension": "AVX",
+    "string": "VADDPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VADDPS_XMM_XMM_XMM": {
+    "iform_xed": "VADDPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VADDPS",
+    "iclass": "VADDPS",
+    "extension": "AVX",
+    "string": "VADDPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VADDPS_YMM_YMM_YMM": {
+    "iform_xed": "VADDPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VADDPS",
+    "iclass": "VADDPS",
+    "extension": "AVX",
+    "string": "VADDPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VADDSD_XMM_XMM_XMM": {
+    "iform_xed": "VADDSD_XMMdq_XMMdq_XMMq",
+    "asm": "VADDSD",
+    "iclass": "VADDSD",
+    "extension": "AVX",
+    "string": "VADDSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VADDSS_XMM_XMM_XMM": {
+    "iform_xed": "VADDSS_XMMdq_XMMdq_XMMd",
+    "asm": "VADDSS",
+    "iclass": "VADDSS",
+    "extension": "AVX",
+    "string": "VADDSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VDIVPD_XMM_XMM_XMM": {
+    "iform_xed": "VDIVPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VDIVPD",
+    "iclass": "VDIVPD",
+    "extension": "AVX",
+    "string": "VDIVPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 4.5,
+      "TP_loop": 4.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 13.0
+    }
+  },
+  "VDIVPD_YMM_YMM_YMM": {
+    "iform_xed": "VDIVPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VDIVPD",
+    "iclass": "VDIVPD",
+    "extension": "AVX",
+    "string": "VDIVPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 4.5,
+      "TP_loop": 4.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 13.0
+    }
+  },
+  "VDIVPS_XMM_XMM_XMM": {
+    "iform_xed": "VDIVPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VDIVPS",
+    "iclass": "VDIVPS",
+    "extension": "AVX",
+    "string": "VDIVPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 3.5,
+      "TP_loop": 3.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 10.0
+    }
+  },
+  "VDIVPS_YMM_YMM_YMM": {
+    "iform_xed": "VDIVPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VDIVPS",
+    "iclass": "VDIVPS",
+    "extension": "AVX",
+    "string": "VDIVPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 3.5,
+      "TP_loop": 3.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 10.0
+    }
+  },
+  "VDIVSD_XMM_XMM_XMM": {
+    "iform_xed": "VDIVSD_XMMdq_XMMdq_XMMq",
+    "asm": "VDIVSD",
+    "iclass": "VDIVSD",
+    "extension": "AVX",
+    "string": "VDIVSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 4.5,
+      "TP_loop": 4.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 13.0
+    }
+  },
+  "VDIVSS_XMM_XMM_XMM": {
+    "iform_xed": "VDIVSS_XMMdq_XMMdq_XMMd",
+    "asm": "VDIVSS",
+    "iclass": "VDIVSS",
+    "extension": "AVX",
+    "string": "VDIVSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 3.5,
+      "TP_loop": 3.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 10.0
+    }
+  },
+  "VMAXPD_XMM_XMM_XMM": {
+    "iform_xed": "VMAXPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VMAXPD",
+    "iclass": "VMAXPD",
+    "extension": "AVX",
+    "string": "VMAXPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMAXPD_YMM_YMM_YMM": {
+    "iform_xed": "VMAXPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VMAXPD",
+    "iclass": "VMAXPD",
+    "extension": "AVX",
+    "string": "VMAXPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMAXPS_XMM_XMM_XMM": {
+    "iform_xed": "VMAXPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VMAXPS",
+    "iclass": "VMAXPS",
+    "extension": "AVX",
+    "string": "VMAXPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMAXPS_YMM_YMM_YMM": {
+    "iform_xed": "VMAXPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VMAXPS",
+    "iclass": "VMAXPS",
+    "extension": "AVX",
+    "string": "VMAXPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMAXSD_XMM_XMM_XMM": {
+    "iform_xed": "VMAXSD_XMMdq_XMMdq_XMMq",
+    "asm": "VMAXSD",
+    "iclass": "VMAXSD",
+    "extension": "AVX",
+    "string": "VMAXSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMAXSS_XMM_XMM_XMM": {
+    "iform_xed": "VMAXSS_XMMdq_XMMdq_XMMd",
+    "asm": "VMAXSS",
+    "iclass": "VMAXSS",
+    "extension": "AVX",
+    "string": "VMAXSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINPD_XMM_XMM_XMM": {
+    "iform_xed": "VMINPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VMINPD",
+    "iclass": "VMINPD",
+    "extension": "AVX",
+    "string": "VMINPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINPD_YMM_YMM_YMM": {
+    "iform_xed": "VMINPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VMINPD",
+    "iclass": "VMINPD",
+    "extension": "AVX",
+    "string": "VMINPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINPS_XMM_XMM_XMM": {
+    "iform_xed": "VMINPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VMINPS",
+    "iclass": "VMINPS",
+    "extension": "AVX",
+    "string": "VMINPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINPS_YMM_YMM_YMM": {
+    "iform_xed": "VMINPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VMINPS",
+    "iclass": "VMINPS",
+    "extension": "AVX",
+    "string": "VMINPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINSD_XMM_XMM_XMM": {
+    "iform_xed": "VMINSD_XMMdq_XMMdq_XMMq",
+    "asm": "VMINSD",
+    "iclass": "VMINSD",
+    "extension": "AVX",
+    "string": "VMINSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMINSS_XMM_XMM_XMM": {
+    "iform_xed": "VMINSS_XMMdq_XMMdq_XMMd",
+    "asm": "VMINSS",
+    "iclass": "VMINSS",
+    "extension": "AVX",
+    "string": "VMINSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "VMULPD_XMM_XMM_XMM": {
+    "iform_xed": "VMULPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VMULPD",
+    "iclass": "VMULPD",
+    "extension": "AVX",
+    "string": "VMULPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VMULPD_YMM_YMM_YMM": {
+    "iform_xed": "VMULPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VMULPD",
+    "iclass": "VMULPD",
+    "extension": "AVX",
+    "string": "VMULPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VMULPS_XMM_XMM_XMM": {
+    "iform_xed": "VMULPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VMULPS",
+    "iclass": "VMULPS",
+    "extension": "AVX",
+    "string": "VMULPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VMULPS_YMM_YMM_YMM": {
+    "iform_xed": "VMULPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VMULPS",
+    "iclass": "VMULPS",
+    "extension": "AVX",
+    "string": "VMULPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VMULSD_XMM_XMM_XMM": {
+    "iform_xed": "VMULSD_XMMdq_XMMdq_XMMq",
+    "asm": "VMULSD",
+    "iclass": "VMULSD",
+    "extension": "AVX",
+    "string": "VMULSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VMULSS_XMM_XMM_XMM": {
+    "iform_xed": "VMULSS_XMMdq_XMMdq_XMMd",
+    "asm": "VMULSS",
+    "iclass": "VMULSS",
+    "extension": "AVX",
+    "string": "VMULSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "VSQRTPD_XMM_XMM": {
+    "iform_xed": "VSQRTPD_XMMdq_XMMdq",
+    "asm": "VSQRTPD",
+    "iclass": "VSQRTPD",
+    "extension": "AVX",
+    "string": "VSQRTPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 8.5,
+      "TP_loop": 8.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 20.0
+    }
+  },
+  "VSQRTPD_YMM_YMM": {
+    "iform_xed": "VSQRTPD_YMMqq_YMMqq",
+    "asm": "VSQRTPD",
+    "iclass": "VSQRTPD",
+    "extension": "AVX",
+    "string": "VSQRTPD (YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM"
+    ],
+    "category": "RR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 8.5,
+      "TP_loop": 8.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 20.0
+    }
+  },
+  "VSQRTPS_XMM_XMM": {
+    "iform_xed": "VSQRTPS_XMMdq_XMMdq",
+    "asm": "VSQRTPS",
+    "iclass": "VSQRTPS",
+    "extension": "AVX",
+    "string": "VSQRTPS (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 5.0,
+      "TP_loop": 5.0,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 14.0
+    }
+  },
+  "VSQRTPS_YMM_YMM": {
+    "iform_xed": "VSQRTPS_YMMqq_YMMqq",
+    "asm": "VSQRTPS",
+    "iclass": "VSQRTPS",
+    "extension": "AVX",
+    "string": "VSQRTPS (YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM"
+    ],
+    "category": "RR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 5.0,
+      "TP_loop": 5.0,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 14.0
+    }
+  },
+  "VSQRTSD_XMM_XMM_XMM": {
+    "iform_xed": "VSQRTSD_XMMdq_XMMdq_XMMq",
+    "asm": "VSQRTSD",
+    "iclass": "VSQRTSD",
+    "extension": "AVX",
+    "string": "VSQRTSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 8.5,
+      "TP_loop": 8.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 20.0
+    }
+  },
+  "VSQRTSS_XMM_XMM_XMM": {
+    "iform_xed": "VSQRTSS_XMMdq_XMMdq_XMMd",
+    "asm": "VSQRTSS",
+    "iclass": "VSQRTSS",
+    "extension": "AVX",
+    "string": "VSQRTSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 5.0,
+      "TP_loop": 5.0,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 14.0
+    }
+  },
+  "VSUBPD_XMM_XMM_XMM": {
+    "iform_xed": "VSUBPD_XMMdq_XMMdq_XMMdq",
+    "asm": "VSUBPD",
+    "iclass": "VSUBPD",
+    "extension": "AVX",
+    "string": "VSUBPD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VSUBPD_YMM_YMM_YMM": {
+    "iform_xed": "VSUBPD_YMMqq_YMMqq_YMMqq",
+    "asm": "VSUBPD",
+    "iclass": "VSUBPD",
+    "extension": "AVX",
+    "string": "VSUBPD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VSUBPS_XMM_XMM_XMM": {
+    "iform_xed": "VSUBPS_XMMdq_XMMdq_XMMdq",
+    "asm": "VSUBPS",
+    "iclass": "VSUBPS",
+    "extension": "AVX",
+    "string": "VSUBPS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VSUBPS_YMM_YMM_YMM": {
+    "iform_xed": "VSUBPS_YMMqq_YMMqq_YMMqq",
+    "asm": "VSUBPS",
+    "iclass": "VSUBPS",
+    "extension": "AVX",
+    "string": "VSUBPS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VSUBSD_XMM_XMM_XMM": {
+    "iform_xed": "VSUBSD_XMMdq_XMMdq_XMMq",
+    "asm": "VSUBSD",
+    "iclass": "VSUBSD",
+    "extension": "AVX",
+    "string": "VSUBSD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "VSUBSS_XMM_XMM_XMM": {
+    "iform_xed": "VSUBSS_XMMdq_XMMdq_XMMd",
+    "asm": "VSUBSS",
+    "iclass": "VSUBSS",
+    "extension": "AVX",
+    "string": "VSUBSS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "ADD_R64_I32": {
+    "iform_xed": "ADD_GPRv_IMMz",
+    "asm": "ADD",
+    "iclass": "ADD",
+    "extension": "BASE",
+    "string": "ADD (R64, I32)",
+    "operand_types": [
+      "R64",
+      "I32"
+    ],
+    "category": "R_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.43,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ADD_R64_I8": {
+    "iform_xed": "ADD_GPRv_IMMb",
+    "asm": "ADD",
+    "iclass": "ADD",
+    "extension": "BASE",
+    "string": "ADD (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.25,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "AND_R64_I32": {
+    "iform_xed": "AND_GPRv_IMMz",
+    "asm": "AND",
+    "iclass": "AND",
+    "extension": "BASE",
+    "string": "AND (R64, I32)",
+    "operand_types": [
+      "R64",
+      "I32"
+    ],
+    "category": "R_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.43,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "AND_R64_I8": {
+    "iform_xed": "AND_GPRv_IMMb",
+    "asm": "AND",
+    "iclass": "AND",
+    "extension": "BASE",
+    "string": "AND (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.25,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "BSF_R64_R64": {
+    "iform_xed": "BSF_GPRv_GPRv",
+    "asm": "BSF",
+    "iclass": "BSF",
+    "extension": "BASE",
+    "string": "BSF (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 6.0,
+      "TP_unrolled": 3.0,
+      "TP_loop": 3.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "BSR_R64_R64": {
+    "iform_xed": "BSR_GPRv_GPRv",
+    "asm": "BSR",
+    "iclass": "BSR",
+    "extension": "BASE",
+    "string": "BSR (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 6.0,
+      "TP_unrolled": 4.0,
+      "TP_loop": 4.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 4.0
+    }
+  },
+  "IMUL_R64_R64": {
+    "iform_xed": "IMUL_GPRv_GPRv",
+    "asm": "IMUL",
+    "iclass": "IMUL",
+    "extension": "BASE",
+    "string": "IMUL (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 1.0,
+      "TP_loop": 1.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "IMUL_R64_R64_I32": {
+    "iform_xed": "IMUL_GPRv_GPRv_IMMz",
+    "asm": "IMUL",
+    "iclass": "IMUL",
+    "extension": "BASE",
+    "string": "IMUL (R64, R64, I32)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "I32"
+    ],
+    "category": "RR_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 1.0,
+      "TP_loop": 1.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "IMUL_R64_R64_I8": {
+    "iform_xed": "IMUL_GPRv_GPRv_IMMb",
+    "asm": "IMUL",
+    "iclass": "IMUL",
+    "extension": "BASE",
+    "string": "IMUL (R64, R64, I8)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "I8"
+    ],
+    "category": "RR_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 1.0,
+      "TP_loop": 1.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "OR_R64_I32": {
+    "iform_xed": "OR_GPRv_IMMz",
+    "asm": "OR",
+    "iclass": "OR",
+    "extension": "BASE",
+    "string": "OR (R64, I32)",
+    "operand_types": [
+      "R64",
+      "I32"
+    ],
+    "category": "R_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.43,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "OR_R64_I8": {
+    "iform_xed": "OR_GPRv_IMMb",
+    "asm": "OR",
+    "iclass": "OR",
+    "extension": "BASE",
+    "string": "OR (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.25,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ROL_R64_1": {
+    "iform_xed": "ROL_GPRv_ONE",
+    "asm": "ROL",
+    "iclass": "ROL",
+    "extension": "BASE",
+    "string": "ROL (R64, 1)",
+    "operand_types": [
+      "R64",
+      "1"
+    ],
+    "category": "SHIFT_R_1_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ROL_R64_I8": {
+    "iform_xed": "ROL_GPRv_IMMb",
+    "asm": "ROL",
+    "iclass": "ROL",
+    "extension": "BASE",
+    "string": "ROL (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ROR_R64_1": {
+    "iform_xed": "ROR_GPRv_ONE",
+    "asm": "ROR",
+    "iclass": "ROR",
+    "extension": "BASE",
+    "string": "ROR (R64, 1)",
+    "operand_types": [
+      "R64",
+      "1"
+    ],
+    "category": "SHIFT_R_1_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ROR_R64_I8": {
+    "iform_xed": "ROR_GPRv_IMMb",
+    "asm": "ROR",
+    "iclass": "ROR",
+    "extension": "BASE",
+    "string": "ROR (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SAR_R64_1": {
+    "iform_xed": "SAR_GPRv_ONE",
+    "asm": "SAR",
+    "iclass": "SAR",
+    "extension": "BASE",
+    "string": "SAR (R64, 1)",
+    "operand_types": [
+      "R64",
+      "1"
+    ],
+    "category": "SHIFT_R_1_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SAR_R64_I8": {
+    "iform_xed": "SAR_GPRv_IMMb",
+    "asm": "SAR",
+    "iclass": "SAR",
+    "extension": "BASE",
+    "string": "SAR (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHL_R64_1": {
+    "iform_xed": "SHL_GPRv_ONE_D1r4",
+    "asm": "SHL",
+    "iclass": "SHL",
+    "extension": "BASE",
+    "string": "SHL (R64, 1)",
+    "operand_types": [
+      "R64",
+      "1"
+    ],
+    "category": "SHIFT_R_1_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHL_R64_I8": {
+    "iform_xed": "SHL_GPRv_IMMb_C1r4",
+    "asm": "SHL",
+    "iclass": "SHL",
+    "extension": "BASE",
+    "string": "SHL (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHR_R64_1": {
+    "iform_xed": "SHR_GPRv_ONE",
+    "asm": "SHR",
+    "iclass": "SHR",
+    "extension": "BASE",
+    "string": "SHR (R64, 1)",
+    "operand_types": [
+      "R64",
+      "1"
+    ],
+    "category": "SHIFT_R_1_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHR_R64_I8": {
+    "iform_xed": "SHR_GPRv_IMMb",
+    "asm": "SHR",
+    "iclass": "SHR",
+    "extension": "BASE",
+    "string": "SHR (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SUB_R64_I32": {
+    "iform_xed": "SUB_GPRv_IMMz",
+    "asm": "SUB",
+    "iclass": "SUB",
+    "extension": "BASE",
+    "string": "SUB (R64, I32)",
+    "operand_types": [
+      "R64",
+      "I32"
+    ],
+    "category": "R_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.43,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SUB_R64_I8": {
+    "iform_xed": "SUB_GPRv_IMMb",
+    "asm": "SUB",
+    "iclass": "SUB",
+    "extension": "BASE",
+    "string": "SUB (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.25,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "XOR_R64_I32": {
+    "iform_xed": "XOR_GPRv_IMMz",
+    "asm": "XOR",
+    "iclass": "XOR",
+    "extension": "BASE",
+    "string": "XOR (R64, I32)",
+    "operand_types": [
+      "R64",
+      "I32"
+    ],
+    "category": "R_I32_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.43,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "XOR_R64_I8": {
+    "iform_xed": "XOR_GPRv_IMMb",
+    "asm": "XOR",
+    "iclass": "XOR",
+    "extension": "BASE",
+    "string": "XOR (R64, I8)",
+    "operand_types": [
+      "R64",
+      "I8"
+    ],
+    "category": "R_I8_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.25,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ANDN_R64_R64_R64": {
+    "iform_xed": "ANDN_GPR64q_GPR64q_GPR64q",
+    "asm": "ANDN",
+    "iclass": "ANDN",
+    "extension": "BMI1",
+    "string": "ANDN (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.31,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "BEXTR_R64_R64_R64": {
+    "iform_xed": "BEXTR_GPR64q_GPR64q_GPR64q",
+    "asm": "BEXTR",
+    "iclass": "BEXTR",
+    "extension": "BMI1",
+    "string": "BEXTR (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "BLSI_R64_R64": {
+    "iform_xed": "BLSI_GPR64q_GPR64q",
+    "asm": "BLSI",
+    "iclass": "BLSI",
+    "extension": "BMI1",
+    "string": "BLSI (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 2.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 2.0
+    }
+  },
+  "BLSMSK_R64_R64": {
+    "iform_xed": "BLSMSK_GPR64q_GPR64q",
+    "asm": "BLSMSK",
+    "iclass": "BLSMSK",
+    "extension": "BMI1",
+    "string": "BLSMSK (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 2.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 2.0
+    }
+  },
+  "BLSR_R64_R64": {
+    "iform_xed": "BLSR_GPR64q_GPR64q",
+    "asm": "BLSR",
+    "iclass": "BLSR",
+    "extension": "BMI1",
+    "string": "BLSR (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 2.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 2.0
+    }
+  },
+  "TZCNT_R64_R64": {
+    "iform_xed": "TZCNT_GPRv_GPRv",
+    "asm": "TZCNT",
+    "iclass": "TZCNT",
+    "extension": "BMI1",
+    "string": "TZCNT (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 2.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 2.0
+    }
+  },
+  "BZHI_R64_R64_R64": {
+    "iform_xed": "BZHI_GPR64q_GPR64q_GPR64q",
+    "asm": "BZHI",
+    "iclass": "BZHI",
+    "extension": "BMI2",
+    "string": "BZHI (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "PDEP_R64_R64_R64": {
+    "iform_xed": "PDEP_GPR64q_GPR64q_GPR64q",
+    "asm": "PDEP",
+    "iclass": "PDEP",
+    "extension": "BMI2",
+    "string": "PDEP (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 1.0,
+      "TP_loop": 1.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "PEXT_R64_R64_R64": {
+    "iform_xed": "PEXT_GPR64q_GPR64q_GPR64q",
+    "asm": "PEXT",
+    "iclass": "PEXT",
+    "extension": "BMI2",
+    "string": "PEXT (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 1.0,
+      "TP_loop": 1.0,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 3.0
+    }
+  },
+  "SARX_R64_R64_R64": {
+    "iform_xed": "SARX_GPR64q_GPR64q_GPR64q",
+    "asm": "SARX",
+    "iclass": "SARX",
+    "extension": "BMI2",
+    "string": "SARX (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHLX_R64_R64_R64": {
+    "iform_xed": "SHLX_GPR64q_GPR64q_GPR64q",
+    "asm": "SHLX",
+    "iclass": "SHLX",
+    "extension": "BMI2",
+    "string": "SHLX (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "SHRX_R64_R64_R64": {
+    "iform_xed": "SHRX_GPR64q_GPR64q_GPR64q",
+    "asm": "SHRX",
+    "iclass": "SHRX",
+    "extension": "BMI2",
+    "string": "SHRX (R64, R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64",
+      "R64"
+    ],
+    "category": "RRR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "VFMADD132PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD132PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD132PD",
+    "iclass": "VFMADD132PD",
+    "extension": "FMA",
+    "string": "VFMADD132PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD132PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD132PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD132PD",
+    "iclass": "VFMADD132PD",
+    "extension": "FMA",
+    "string": "VFMADD132PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD132PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD132PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD132PS",
+    "iclass": "VFMADD132PS",
+    "extension": "FMA",
+    "string": "VFMADD132PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD132PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD132PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD132PS",
+    "iclass": "VFMADD132PS",
+    "extension": "FMA",
+    "string": "VFMADD132PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD132SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD132SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMADD132SD",
+    "iclass": "VFMADD132SD",
+    "extension": "FMA",
+    "string": "VFMADD132SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD132SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD132SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMADD132SS",
+    "iclass": "VFMADD132SS",
+    "extension": "FMA",
+    "string": "VFMADD132SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD213PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD213PD",
+    "iclass": "VFMADD213PD",
+    "extension": "FMA",
+    "string": "VFMADD213PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD213PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD213PD",
+    "iclass": "VFMADD213PD",
+    "extension": "FMA",
+    "string": "VFMADD213PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD213PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD213PS",
+    "iclass": "VFMADD213PS",
+    "extension": "FMA",
+    "string": "VFMADD213PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD213PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD213PS",
+    "iclass": "VFMADD213PS",
+    "extension": "FMA",
+    "string": "VFMADD213PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD213SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMADD213SD",
+    "iclass": "VFMADD213SD",
+    "extension": "FMA",
+    "string": "VFMADD213SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD213SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD213SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMADD213SS",
+    "iclass": "VFMADD213SS",
+    "extension": "FMA",
+    "string": "VFMADD213SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD231PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD231PD",
+    "iclass": "VFMADD231PD",
+    "extension": "FMA",
+    "string": "VFMADD231PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD231PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD231PD",
+    "iclass": "VFMADD231PD",
+    "extension": "FMA",
+    "string": "VFMADD231PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD231PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMADD231PS",
+    "iclass": "VFMADD231PS",
+    "extension": "FMA",
+    "string": "VFMADD231PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMADD231PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMADD231PS",
+    "iclass": "VFMADD231PS",
+    "extension": "FMA",
+    "string": "VFMADD231PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD231SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMADD231SD",
+    "iclass": "VFMADD231SD",
+    "extension": "FMA",
+    "string": "VFMADD231SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMADD231SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMADD231SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMADD231SS",
+    "iclass": "VFMADD231SS",
+    "extension": "FMA",
+    "string": "VFMADD231SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB132PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB132PD",
+    "iclass": "VFMSUB132PD",
+    "extension": "FMA",
+    "string": "VFMSUB132PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB132PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB132PD",
+    "iclass": "VFMSUB132PD",
+    "extension": "FMA",
+    "string": "VFMSUB132PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB132PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB132PS",
+    "iclass": "VFMSUB132PS",
+    "extension": "FMA",
+    "string": "VFMSUB132PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB132PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB132PS",
+    "iclass": "VFMSUB132PS",
+    "extension": "FMA",
+    "string": "VFMSUB132PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB132SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMSUB132SD",
+    "iclass": "VFMSUB132SD",
+    "extension": "FMA",
+    "string": "VFMSUB132SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB132SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB132SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMSUB132SS",
+    "iclass": "VFMSUB132SS",
+    "extension": "FMA",
+    "string": "VFMSUB132SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB213PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB213PD",
+    "iclass": "VFMSUB213PD",
+    "extension": "FMA",
+    "string": "VFMSUB213PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB213PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB213PD",
+    "iclass": "VFMSUB213PD",
+    "extension": "FMA",
+    "string": "VFMSUB213PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB213PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB213PS",
+    "iclass": "VFMSUB213PS",
+    "extension": "FMA",
+    "string": "VFMSUB213PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB213PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB213PS",
+    "iclass": "VFMSUB213PS",
+    "extension": "FMA",
+    "string": "VFMSUB213PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB213SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMSUB213SD",
+    "iclass": "VFMSUB213SD",
+    "extension": "FMA",
+    "string": "VFMSUB213SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB213SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB213SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMSUB213SS",
+    "iclass": "VFMSUB213SS",
+    "extension": "FMA",
+    "string": "VFMSUB213SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231PD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB231PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB231PD",
+    "iclass": "VFMSUB231PD",
+    "extension": "FMA",
+    "string": "VFMSUB231PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231PD_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB231PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB231PD",
+    "iclass": "VFMSUB231PD",
+    "extension": "FMA",
+    "string": "VFMSUB231PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231PS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB231PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFMSUB231PS",
+    "iclass": "VFMSUB231PS",
+    "extension": "FMA",
+    "string": "VFMSUB231PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231PS_YMM_YMM_YMM": {
+    "iform_xed": "VFMSUB231PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFMSUB231PS",
+    "iclass": "VFMSUB231PS",
+    "extension": "FMA",
+    "string": "VFMSUB231PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231SD_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB231SD_XMMdq_XMMq_XMMq",
+    "asm": "VFMSUB231SD",
+    "iclass": "VFMSUB231SD",
+    "extension": "FMA",
+    "string": "VFMSUB231SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFMSUB231SS_XMM_XMM_XMM": {
+    "iform_xed": "VFMSUB231SS_XMMdq_XMMd_XMMd",
+    "asm": "VFMSUB231SS",
+    "iclass": "VFMSUB231SS",
+    "extension": "FMA",
+    "string": "VFMSUB231SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD132PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD132PD",
+    "iclass": "VFNMADD132PD",
+    "extension": "FMA",
+    "string": "VFNMADD132PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD132PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD132PD",
+    "iclass": "VFNMADD132PD",
+    "extension": "FMA",
+    "string": "VFNMADD132PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD132PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD132PS",
+    "iclass": "VFNMADD132PS",
+    "extension": "FMA",
+    "string": "VFNMADD132PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD132PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD132PS",
+    "iclass": "VFNMADD132PS",
+    "extension": "FMA",
+    "string": "VFNMADD132PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD132SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMADD132SD",
+    "iclass": "VFNMADD132SD",
+    "extension": "FMA",
+    "string": "VFNMADD132SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD132SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD132SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMADD132SS",
+    "iclass": "VFNMADD132SS",
+    "extension": "FMA",
+    "string": "VFNMADD132SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD213PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD213PD",
+    "iclass": "VFNMADD213PD",
+    "extension": "FMA",
+    "string": "VFNMADD213PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD213PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD213PD",
+    "iclass": "VFNMADD213PD",
+    "extension": "FMA",
+    "string": "VFNMADD213PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD213PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD213PS",
+    "iclass": "VFNMADD213PS",
+    "extension": "FMA",
+    "string": "VFNMADD213PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD213PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD213PS",
+    "iclass": "VFNMADD213PS",
+    "extension": "FMA",
+    "string": "VFNMADD213PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD213SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMADD213SD",
+    "iclass": "VFNMADD213SD",
+    "extension": "FMA",
+    "string": "VFNMADD213SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD213SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD213SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMADD213SS",
+    "iclass": "VFNMADD213SS",
+    "extension": "FMA",
+    "string": "VFNMADD213SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD231PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD231PD",
+    "iclass": "VFNMADD231PD",
+    "extension": "FMA",
+    "string": "VFNMADD231PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD231PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD231PD",
+    "iclass": "VFNMADD231PD",
+    "extension": "FMA",
+    "string": "VFNMADD231PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD231PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMADD231PS",
+    "iclass": "VFNMADD231PS",
+    "extension": "FMA",
+    "string": "VFNMADD231PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMADD231PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMADD231PS",
+    "iclass": "VFNMADD231PS",
+    "extension": "FMA",
+    "string": "VFNMADD231PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD231SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMADD231SD",
+    "iclass": "VFNMADD231SD",
+    "extension": "FMA",
+    "string": "VFNMADD231SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMADD231SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMADD231SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMADD231SS",
+    "iclass": "VFNMADD231SS",
+    "extension": "FMA",
+    "string": "VFNMADD231SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB132PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB132PD",
+    "iclass": "VFNMSUB132PD",
+    "extension": "FMA",
+    "string": "VFNMSUB132PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB132PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB132PD",
+    "iclass": "VFNMSUB132PD",
+    "extension": "FMA",
+    "string": "VFNMSUB132PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB132PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB132PS",
+    "iclass": "VFNMSUB132PS",
+    "extension": "FMA",
+    "string": "VFNMSUB132PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB132PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB132PS",
+    "iclass": "VFNMSUB132PS",
+    "extension": "FMA",
+    "string": "VFNMSUB132PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB132SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMSUB132SD",
+    "iclass": "VFNMSUB132SD",
+    "extension": "FMA",
+    "string": "VFNMSUB132SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB132SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB132SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMSUB132SS",
+    "iclass": "VFNMSUB132SS",
+    "extension": "FMA",
+    "string": "VFNMSUB132SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB213PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB213PD",
+    "iclass": "VFNMSUB213PD",
+    "extension": "FMA",
+    "string": "VFNMSUB213PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB213PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB213PD",
+    "iclass": "VFNMSUB213PD",
+    "extension": "FMA",
+    "string": "VFNMSUB213PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB213PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB213PS",
+    "iclass": "VFNMSUB213PS",
+    "extension": "FMA",
+    "string": "VFNMSUB213PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB213PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB213PS",
+    "iclass": "VFNMSUB213PS",
+    "extension": "FMA",
+    "string": "VFNMSUB213PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB213SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMSUB213SD",
+    "iclass": "VFNMSUB213SD",
+    "extension": "FMA",
+    "string": "VFNMSUB213SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB213SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB213SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMSUB213SS",
+    "iclass": "VFNMSUB213SS",
+    "extension": "FMA",
+    "string": "VFNMSUB213SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231PD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB231PD_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB231PD",
+    "iclass": "VFNMSUB231PD",
+    "extension": "FMA",
+    "string": "VFNMSUB231PD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231PD_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB231PD_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB231PD",
+    "iclass": "VFNMSUB231PD",
+    "extension": "FMA",
+    "string": "VFNMSUB231PD (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231PS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB231PS_XMMdq_XMMdq_XMMdq",
+    "asm": "VFNMSUB231PS",
+    "iclass": "VFNMSUB231PS",
+    "extension": "FMA",
+    "string": "VFNMSUB231PS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231PS_YMM_YMM_YMM": {
+    "iform_xed": "VFNMSUB231PS_YMMqq_YMMqq_YMMqq",
+    "asm": "VFNMSUB231PS",
+    "iclass": "VFNMSUB231PS",
+    "extension": "FMA",
+    "string": "VFNMSUB231PS (YMM, YMM, YMM)",
+    "operand_types": [
+      "YMM",
+      "YMM",
+      "YMM"
+    ],
+    "category": "RRR_YMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231SD_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB231SD_XMMdq_XMMq_XMMq",
+    "asm": "VFNMSUB231SD",
+    "iclass": "VFNMSUB231SD",
+    "extension": "FMA",
+    "string": "VFNMSUB231SD (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "VFNMSUB231SS_XMM_XMM_XMM": {
+    "iform_xed": "VFNMSUB231SS_XMMdq_XMMd_XMMd",
+    "asm": "VFNMSUB231SS",
+    "iclass": "VFNMSUB231SS",
+    "extension": "FMA",
+    "string": "VFNMSUB231SS (XMM, XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM",
+      "XMM"
+    ],
+    "category": "RRR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 4.0
+    }
+  },
+  "LZCNT_R64_R64": {
+    "iform_xed": "LZCNT_GPRv_GPRv",
+    "asm": "LZCNT",
+    "iclass": "LZCNT",
+    "extension": "LZCNT",
+    "string": "LZCNT (R64, R64)",
+    "operand_types": [
+      "R64",
+      "R64"
+    ],
+    "category": "RR_GPR64",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.31,
+      "TP_loop": 0.25,
+      "TP_ports": null,
+      "ports": "",
+      "latency_max": 1.0
+    }
+  },
+  "ADDPD_XMM_XMM": {
+    "iform_xed": "ADDPD_XMMpd_XMMpd",
+    "asm": "ADDPD",
+    "iclass": "ADDPD",
+    "extension": "SSE2",
+    "string": "ADDPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "ADDSD_XMM_XMM": {
+    "iform_xed": "ADDSD_XMMsd_XMMsd",
+    "asm": "ADDSD",
+    "iclass": "ADDSD",
+    "extension": "SSE2",
+    "string": "ADDSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "DIVPD_XMM_XMM": {
+    "iform_xed": "DIVPD_XMMpd_XMMpd",
+    "asm": "DIVPD",
+    "iclass": "DIVPD",
+    "extension": "SSE2",
+    "string": "DIVPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 4.5,
+      "TP_loop": 4.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 13.0
+    }
+  },
+  "DIVSD_XMM_XMM": {
+    "iform_xed": "DIVSD_XMMsd_XMMsd",
+    "asm": "DIVSD",
+    "iclass": "DIVSD",
+    "extension": "SSE2",
+    "string": "DIVSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 4.5,
+      "TP_loop": 4.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 13.0
+    }
+  },
+  "MAXPD_XMM_XMM": {
+    "iform_xed": "MAXPD_XMMpd_XMMpd",
+    "asm": "MAXPD",
+    "iclass": "MAXPD",
+    "extension": "SSE2",
+    "string": "MAXPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "MAXSD_XMM_XMM": {
+    "iform_xed": "MAXSD_XMMsd_XMMsd",
+    "asm": "MAXSD",
+    "iclass": "MAXSD",
+    "extension": "SSE2",
+    "string": "MAXSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "MINPD_XMM_XMM": {
+    "iform_xed": "MINPD_XMMpd_XMMpd",
+    "asm": "MINPD",
+    "iclass": "MINPD",
+    "extension": "SSE2",
+    "string": "MINPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "MINSD_XMM_XMM": {
+    "iform_xed": "MINSD_XMMsd_XMMsd",
+    "asm": "MINSD",
+    "iclass": "MINSD",
+    "extension": "SSE2",
+    "string": "MINSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 1.0
+    }
+  },
+  "MULPD_XMM_XMM": {
+    "iform_xed": "MULPD_XMMpd_XMMpd",
+    "asm": "MULPD",
+    "iclass": "MULPD",
+    "extension": "SSE2",
+    "string": "MULPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "MULSD_XMM_XMM": {
+    "iform_xed": "MULSD_XMMsd_XMMsd",
+    "asm": "MULSD",
+    "iclass": "MULSD",
+    "extension": "SSE2",
+    "string": "MULSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 3.0
+    }
+  },
+  "SQRTPD_XMM_XMM": {
+    "iform_xed": "SQRTPD_XMMpd_XMMpd",
+    "asm": "SQRTPD",
+    "iclass": "SQRTPD",
+    "extension": "SSE2",
+    "string": "SQRTPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 8.5,
+      "TP_loop": 8.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 20.0
+    }
+  },
+  "SQRTSD_XMM_XMM": {
+    "iform_xed": "SQRTSD_XMMsd_XMMsd",
+    "asm": "SQRTSD",
+    "iclass": "SQRTSD",
+    "extension": "SSE2",
+    "string": "SQRTSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 8.5,
+      "TP_loop": 8.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP01",
+      "latency_max": 20.0
+    }
+  },
+  "SUBPD_XMM_XMM": {
+    "iform_xed": "SUBPD_XMMpd_XMMpd",
+    "asm": "SUBPD",
+    "iclass": "SUBPD",
+    "extension": "SSE2",
+    "string": "SUBPD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  },
+  "SUBSD_XMM_XMM": {
+    "iform_xed": "SUBSD_XMMsd_XMMsd",
+    "asm": "SUBSD",
+    "iclass": "SUBSD",
+    "extension": "SSE2",
+    "string": "SUBSD (XMM, XMM)",
+    "operand_types": [
+      "XMM",
+      "XMM"
+    ],
+    "category": "RR_XMM",
+    "zen3": {
+      "uops": 1.0,
+      "TP_unrolled": 0.5,
+      "TP_loop": 0.5,
+      "TP_ports": 0.5,
+      "ports": "1*FP23",
+      "latency_max": 3.0
+    }
+  }
+}

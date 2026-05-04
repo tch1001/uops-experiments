@@ -1,0 +1,71 @@
+uops-style vector latency/throughput probe
+logical_cpu_requested=0 pinned=yes current_cpu=0 ops_per_sample=6400000 samples=31
+features: invariant_tsc=yes avx2=yes fma=yes sse4.2=yes
+timing: primary_column=clock_gettime_thread_ns
+empty_loop_median: thread_ns=31150 tsc=104312 per_nominal_op_thread_ns=0.00487
+
+=== 128-bit SSE/SSE4 integer ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+paddd xmm               lat          0.215       0.215       0.216       0.732
+paddd xmm               tput         0.050       0.050       0.051       0.171
+pmulld xmm              lat          0.656       0.656       0.656       2.231
+pmulld xmm              tput         0.105       0.105       0.106       0.359
+pshufb xmm              lat          0.216       0.215       0.217       0.734
+pshufb xmm              tput         0.105       0.105       0.106       0.359
+pcmpeqb xmm             lat          0.215       0.215       0.216       0.733
+pcmpeqb xmm             tput         0.050       0.050       0.051       0.171
+por xmm                 lat          0.215       0.215       0.216       0.732
+por xmm                 tput         0.050       0.050       0.051       0.171
+
+=== 256-bit AVX2 integer ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+vpaddd ymm              lat          0.215       0.215       0.216       0.732
+vpaddd ymm              tput         0.050       0.050       0.051       0.171
+vpmulld ymm             lat          0.656       0.656       0.656       2.231
+vpmulld ymm             tput         0.115       0.105       0.142       0.390
+vpshufb ymm             lat          0.216       0.215       0.217       0.734
+vpshufb ymm             tput         0.105       0.105       0.106       0.359
+vpor ymm                lat          0.215       0.215       0.216       0.732
+vpor ymm                tput         0.050       0.050       0.051       0.171
+vpaddq ymm              lat          0.215       0.215       0.216       0.732
+vpaddq ymm              tput         0.050       0.050       0.051       0.171
+
+=== 256-bit AVX FP add/mul ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+vaddps ymm              lat          0.656       0.656       0.656       2.230
+vaddps ymm              tput         0.105       0.105       0.107       0.359
+vmulps ymm              lat          0.656       0.656       0.656       2.230
+vmulps ymm              tput         0.105       0.105       0.110       0.359
+vaddpd ymm              lat          0.657       0.656       0.660       2.232
+vaddpd ymm              tput         0.105       0.105       0.106       0.359
+vmulpd ymm              lat          0.656       0.656       0.657       2.231
+vmulpd ymm              tput         0.105       0.105       0.109       0.359
+
+=== FMA (256-bit) ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+vfmadd231ps ymm         lat          0.876       0.876       0.877       2.980
+vfmadd231ps ymm         tput         0.118       0.105       0.121       0.400
+vfmadd231pd ymm         lat          0.876       0.876       0.877       2.980
+vfmadd231pd ymm         tput         0.118       0.107       0.120       0.400
+vfnmadd231ps ymm        lat          0.876       0.876       0.877       2.980
+vfnmadd231ps ymm        tput         0.117       0.105       0.121       0.399
+
+=== Lane-crossing shuffles (256-bit) ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+vpermq ymm,imm8         lat          1.439       1.433       1.445       4.892
+vpermq ymm,imm8         tput         0.274       0.273       0.274       0.931
+vpermd ymm,ymm          lat          1.834       1.805       1.853       6.237
+vpermd ymm,ymm          tput         0.319       0.318       0.319       1.084
+
+=== 256-bit divide / sqrt ===
+benchmark               kind     med ns/op   min ns/op   p90 ns/op  med tsc/op
+------------------------------------------------------------------------------
+vdivps ymm              lat          3.277       3.275       3.279      11.142
+vdivps ymm              tput         0.675       0.657       0.688       2.294
+vsqrtpd ymm             lat          4.695       4.514       4.705      15.962
+vsqrtpd ymm             tput         1.889       1.871       1.899       6.423

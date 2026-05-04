@@ -1,0 +1,57 @@
+uops-style memory hierarchy + cross-CCD probe (linux)
+logical_cpu_requested=0 pinned=yes current_cpu=0 samples_per_point=31
+features: invariant_tsc=yes
+timing: primary_column=clock_gettime_thread_ns; ns_per_cycle_est=0.52555 (= 1.90 GHz nominal)
+empty_loop_median: thread_ns=1090 tsc=2074
+
+=== Section A: working-set sweep (64B stride, randomized ring) ===
+size               slots   med ns/ld   min ns/ld   p90 ns/ld  med tsc/ld    est cyc/ld
+--------------------------------------------------------------------------------------
+8KB                  128       0.876       0.876       0.885       2.981         1.668
+16KB                 256       0.876       0.876       0.886       2.981         1.668
+32KB                 512       0.940       0.879       0.953       3.197         1.788
+64KB                1024       2.653       2.645       2.655       9.022         5.049
+128KB               2048       2.652       2.644       2.655       9.019         5.047
+256KB               4096       3.010       2.997       3.019      10.234         5.727
+512KB               8192       5.946       5.744       5.987      20.216        11.314
+1MB                16384       9.736       9.675       9.775      33.100        18.525
+2MB                32768      11.100      11.039      11.130      37.738        21.121
+4MB                65536      11.707      11.679      11.719      39.803        22.276
+8MB               131072      12.058      11.988      12.155      40.989        22.943
+16MB              262144      14.647      14.586      14.705      49.793        27.870
+32MB              524288      16.295      16.263      16.402      55.396        31.006
+64MB             1048576      17.995      17.678      19.301      61.167        34.240
+128MB            2097152      20.142      19.975      20.603      68.468        38.325
+256MB            4194304      22.397      22.000      24.302      76.097        42.616
+512MB            8388608      24.115      23.634      26.013      81.962        45.885
+1024MB          16777216      25.449      24.745      28.046      86.496        48.424
+
+=== Section B: TLB sweep ===
+
+[B.1] 4KB-page stride (each step crosses to a new 4KB page)
+pages                 size   med ns/ld   min ns/ld   p90 ns/ld  med tsc/ld    est cyc/ld
+--------------------------------------------------------------------------------------
+64                   256KB       3.303       3.294       3.306      11.232         6.285
+256                    1MB       4.473       4.435       4.480      15.209         8.511
+1024                   4MB       6.659       6.613       6.682      22.641        12.670
+4096                  16MB      12.683      12.582      12.697      43.123        24.132
+16384                 64MB      15.618      15.500      16.201      53.099        29.717
+
+[B.2] 2MB-page stride (THP via MADV_HUGEPAGE; best-effort)
+pages                 size   med ns/ld   min ns/ld   p90 ns/ld  med tsc/ld    est cyc/ld    thp?
+----------------------------------------------------------------------------------------------
+8                     16MB       0.858       0.858       0.858       2.928         1.633     adv
+16                    32MB       3.275       3.275       3.277      11.146         6.232     adv
+64                   128MB       3.304       3.285       3.364      11.244         6.288     adv
+256                  512MB      11.092      10.792      11.362      37.731        21.105     adv
+1024                   2GB      19.357      19.206      19.559      65.821        36.831     adv
+(thp=adv means MADV_HUGEPAGE accepted; actual backing depends on /sys/kernel/mm/transparent_hugepage/enabled.)
+
+=== Section C: cross-CCD pointer-chase ===
+1MB working set (fits in L3 of one CCD; spans inter-CCD link when mismatched).
+scenario                             med ns/ld   min ns/ld   p90 ns/ld  med tsc/ld    est cyc/ld
+------------------------------------------------------------------------------------------------
+same-CCD baseline (CCD0->CCD0)           9.738       9.699       9.776      33.106        18.529
+cross-CCD CCD1->CCD0                     9.729       9.687       9.761      33.076        18.511
+cross-CCD CCD0->CCD1                     9.623       9.577       9.717      32.718        18.310
+same-CCD baseline (CCD1->CCD1)           9.634       9.597       9.705      32.753        18.331

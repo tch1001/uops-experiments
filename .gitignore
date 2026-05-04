@@ -6,6 +6,7 @@ instructions.xml
 *.exe
 *.o
 *.obj
+build/
 uops_latency_linux
 uops_research_linux
 

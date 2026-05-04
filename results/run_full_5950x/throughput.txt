@@ -1,0 +1,22 @@
+uops-style reciprocal-throughput probe (linux)
+logical_cpu_requested=0 pinned=yes current_cpu=0 ops_per_sample=6400000 samples=31
+features: invariant_tsc=yes popcnt=yes lzcnt=yes sse4.2=yes
+timing: primary_column=clock_gettime_thread_ns (rdpmc unavailable without perf_event_open)
+parallelism: ALU/FPadd/FPmul=4-way, divsd/sqrtsd=8-way, L1 loads=8-stream
+empty_loop_median: thread_ns=24930 tsc=83470 per_nominal_op_thread_ns=0.00390
+
+benchmark              med ns/op   min ns/op   p90 ns/op  med tsc/op
+--------------------------------------------------------------------
+add r64, imm               0.053       0.053       0.053       0.180
+add r64, reg               0.053       0.053       0.057       0.180
+imul r64, imm              0.216       0.216       0.224       0.736
+shl r64, 1                 0.106       0.106       0.106       0.362
+ror r64, 7                 0.106       0.106       0.107       0.362
+popcnt r64                 0.055       0.055       0.055       0.185
+lzcnt r64                  0.052       0.052       0.052       0.177
+crc32 r64,r64              0.217       0.216       0.218       0.737
+addsd xmm                  0.167       0.166       0.167       0.566
+mulsd xmm                  0.167       0.166       0.168       0.569
+divsd xmm                  0.988       0.988       0.989       3.359
+sqrtsd xmm                 1.875       1.869       1.883       6.376
+L1 indep loads             0.069       0.069       0.070       0.236
