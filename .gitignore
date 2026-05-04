@@ -1,0 +1,14 @@
+# uops.info instruction database — 137MB, exceeds GitHub's 100MB file limit.
+# Download from https://uops.info/instructions.xml before running compare_uops.js.
+instructions.xml
+
+# Compiled binaries
+*.exe
+*.o
+*.obj
+
+# Build/IDE artifacts
+build/
+.vscode/
+.idea/
+*.swp

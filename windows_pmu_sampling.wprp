@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<WindowsPerformanceRecorder
+    Author="Codex"
+    Comments="Minimal PMU profiles for uops microbench experiments"
+    Company="Local"
+    Team="Local"
+    Version="1.0">
+  <Profiles>
+    <SystemCollector
+        Id="SystemCollector_PMU"
+        Name="NT Kernel Logger">
+      <BufferSize Value="1024"/>
+      <Buffers Value="256"/>
+    </SystemCollector>
+
+    <SystemProvider Id="SystemProvider_PMU_CSwitch">
+      <Keywords>
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="CSwitch"/>
+      </Keywords>
+    </SystemProvider>
+
+    <SystemProvider Id="SystemProvider_PMU_Sampling">
+      <Keywords>
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="PmcProfile"/>
+      </Keywords>
+      <Stacks>
+        <Stack Value="PmcInterrupt"/>
+      </Stacks>
+    </SystemProvider>
+
+    <HardwareCounter Id="HC_PMU_CSwitch" Base="" Strict="true">
+      <Counters>
+        <Counter Value="InstructionRetired"/>
+        <Counter Value="TotalCycles"/>
+      </Counters>
+      <Events>
+        <Event Value="CSwitch"/>
+      </Events>
+    </HardwareCounter>
+
+    <HardwareCounter Id="HC_PMU_Sampling" Base="" Strict="true">
+      <SampledCounters>
+        <SampledCounter Value="InstructionRetired" Interval="100000"/>
+      </SampledCounters>
+    </HardwareCounter>
+
+    <Profile
+        Description="Log PMU counters at context switches"
+        DetailLevel="Verbose"
+        Id="PMUCSwitch.Verbose.File"
+        LoggingMode="File"
+        Name="PMUCSwitch">
+      <Collectors>
+        <SystemCollectorId Value="SystemCollector_PMU">
+          <SystemProviderId Value="SystemProvider_PMU_CSwitch"/>
+          <HardwareCounterId Value="HC_PMU_CSwitch"/>
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+
+    <Profile
+        Description="Sample on retired-instruction counter overflow"
+        DetailLevel="Verbose"
+        Id="PMUSampling.Verbose.File"
+        LoggingMode="File"
+        Name="PMUSampling">
+      <Collectors>
+        <SystemCollectorId Value="SystemCollector_PMU">
+          <SystemProviderId Value="SystemProvider_PMU_Sampling"/>
+          <HardwareCounterId Value="HC_PMU_Sampling"/>
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

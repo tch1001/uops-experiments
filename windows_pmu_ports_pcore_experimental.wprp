@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<WindowsPerformanceRecorder
+    Author="Codex"
+    Comments="Experimental custom Intel P-core port PMU profile for Raptor Lake-HX"
+    Company="Local"
+    Team="Local"
+    Version="1.0">
+  <Profiles>
+    <SystemCollector
+        Id="SystemCollector_PCorePorts"
+        Name="NT Kernel Logger">
+      <BufferSize Value="1024"/>
+      <Buffers Value="256"/>
+    </SystemCollector>
+
+    <SystemProvider Id="SystemProvider_PCorePorts">
+      <Keywords>
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="CSwitch"/>
+      </Keywords>
+    </SystemProvider>
+
+    <MicroArchitecturalConfig Id="CounterConfig_RPL_PCore_Ports" Base="">
+      <ProfileSources Architecture="INTEL" Family="6" Model="183" Description="Raptor Lake-HX P-core port dispatch events">
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_0" Event="0xB2" Unit="0x01" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_1" Event="0xB2" Unit="0x02" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_2_3_10" Event="0xB2" Unit="0x04" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_4_9" Event="0xB2" Unit="0x10" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_5_11" Event="0xB2" Unit="0x20" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_6" Event="0xB2" Unit="0x40" Interval="0x02000003"/>
+        <ProfileSource Name="RPL_P_UOPS_DISPATCHED.PORT_7_8" Event="0xB2" Unit="0x80" Interval="0x02000003"/>
+      </ProfileSources>
+    </MicroArchitecturalConfig>
+
+    <HardwareCounter Id="HC_PCorePorts_CSwitch" Base="" Strict="true">
+      <MicroArchitecturalConfigId Value="CounterConfig_RPL_PCore_Ports"/>
+      <Counters>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_0"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_1"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_2_3_10"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_4_9"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_5_11"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_6"/>
+        <Counter Value="RPL_P_UOPS_DISPATCHED.PORT_7_8"/>
+        <Counter Value="InstructionRetired"/>
+        <Counter Value="TotalCycles"/>
+      </Counters>
+      <Events>
+        <Event Value="CSwitch"/>
+      </Events>
+    </HardwareCounter>
+
+    <Profile
+        Description="Experimental P-core port counters at context switches"
+        DetailLevel="Verbose"
+        Id="PCorePorts.Verbose.File"
+        LoggingMode="File"
+        Name="PCorePorts">
+      <Collectors>
+        <SystemCollectorId Value="SystemCollector_PCorePorts">
+          <SystemProviderId Value="SystemProvider_PCorePorts"/>
+          <HardwareCounterId Value="HC_PCorePorts_CSwitch"/>
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

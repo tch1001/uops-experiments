@@ -1,0 +1,6 @@
+cpu_brand=13th Gen Intel(R) Core(TM) i9-13950HX
+family=6 model=183 stepping=1 native_model_id=1 core_type=0x20 (Intel Atom/E-core)
+logical_cpu_requested=16 pinned=yes current_cpu=16
+features invariant_tsc=yes popcnt=yes lzcnt=yes sse4.2=yes
+rdpmc_fixed_core_cycles=no primary=QueryThreadCycleTime
+empty_median_thread=71603 empty_median_tsc=70903 empty_median_pmc=0
