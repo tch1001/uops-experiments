@@ -6,6 +6,8 @@ instructions.xml
 *.exe
 *.o
 *.obj
+uops_latency_linux
+uops_research_linux
 
 # Build/IDE artifacts
 build/
